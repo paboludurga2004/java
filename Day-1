@@ -1,0 +1,62 @@
+//program-1
+class Hello{
+    public static void main(String[] args){
+        System.out.println("Hello");
+    }
+}
+
+//program-2
+import java.util.Scanner;
+public class Name {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your name:");
+        String name=sc.nextLine();
+        System.out.print("Enter your age:");
+        int age=sc.nextInt();
+        System.out.print("Enter your city:");
+        String city=sc.next();
+    }
+    
+}
+
+//program-3
+import java.util.Scanner;//input syntax
+public class AddTwoIntegers {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);//input syntax
+        System.out.print("Enter the value of a:");
+        int a=sc.nextInt();
+        System.out.print("Enter the value of b:");
+        int b=sc.nextInt();
+        int c=a+b;//initialising c to add a and b
+        System.out.println(c);//output syntax
+        sc.close();
+    }
+}
+
+//program-4
+public class SwapWithTempVariable {
+    public static void main(String[] args){
+        int a=10;
+        int b=20;
+        System.out.println("Before Swapping:"+a+" "+b);//swapping before variables with using temporary variable
+        int temp=a;
+        a=b;
+        b=temp;
+        System.out.println("After Swapping:"+a+" "+b);//swapping after variables
+    }
+    
+}
+
+//program-5
+public class SwapWithoutTempVariable {
+    public static void main(String[] args){
+        int a=10,b=20;
+        System.out.println("Before Swapping:"+a+" "+b);//swapping before variables without using temporary variable
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("After Swapping:"+a+" "+b);//swapping after variables
+    }
+}
