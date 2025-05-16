@@ -1,0 +1,85 @@
+//program-1
+import java.util.Scanner;
+class User{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your name:");//user input
+        String name=sc.nextLine();
+    }
+}
+//output:-Enter your name:Durga Prasad
+
+//program-2
+
+class Rectangle{
+    public static void main(String[] args){
+        int length=10,breadth=20;
+        double area=length*breadth;
+        System.out.println("Area of rectangle:"+area);
+    }
+}
+//output:-Area of rectangle:200.0
+
+//program-3
+
+class CelsiusToFahrenheit{
+    public static void main(String[] args){
+        double celsius=20;
+        double fahrenheit=(celsius*9/5)+32;
+        System.out.println("Fahrenheit:"+fahrenheit);
+    }
+}
+//output:-68.0
+
+//program-4
+import java.util.Scanner;
+class CompoundInterest{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+		    System.out.print("Enter the principal:");
+		    double principal=sc.nextDouble();
+		    System.out.print("Enter the rate:");
+		    double rate=sc.nextDouble();
+		    System.out.println("Enter the time:");
+		    double time=sc.nextDouble();
+		    double amount=principal*Math.pow((1+rate/100),time);
+        double compoundinterest=amount-principal;
+        System.out.println("Compound Interest:"+compoundinterest);
+		    System.out.println("Amount:"+amount);
+    }
+}
+
+//output:-
+Enter the principal:1000.0
+Enter the rate:35.0
+Enter the time:2
+Compound Interest:822.5000000000002
+Amount:1822.5000000000002
+
+//program-5
+import java.util.Scanner;
+
+class DaysConvert {
+    public static void main(String[] args) {
+    	  Scanner sc=new Scanner(System.in);
+		    System.out.print("Enter the days:");
+		    int days=sc.nextInt();
+		    int years=days/365;
+		    int weeks=(days%365)/7;
+		    System.out.println("Years:"+years);
+		    System.out.println("Weeks:"+weeks);
+    }
+}
+
+//output:-
+Enter the days:800
+Years:2
+Weeks:10
+
+
+
+
+
+        
+
+        
