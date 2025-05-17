@@ -1,0 +1,106 @@
+//program-1-Number Checker
+
+class NumberChecker{
+    public static void main(String[] args){
+        int a=1;
+        if(a>0){
+           System.out.print("Positive");
+        }
+        else if(a<0){
+           System.out.print("Negative");
+        }
+        else{
+           System.out.print("Zero");
+        }
+    }
+}
+//output:-positive
+
+//program-2
+class LargestNumber{
+    public static void main(String[] args){
+        int a=10,b=15,c=5;
+        if(a>=b&&a>=c){
+           System.out.print("A is greater than B and C");
+        }
+        else if(b>=a&&b>=c){
+           System.out.println("B is greater than C and A");
+        }
+        else{
+           System.out.println("C is greater than A and B");
+        }
+    }
+}
+
+//output:-B is greater than C and A
+
+//program-3
+import java.util.Scanner;
+public class BinaryToOctal {
+
+	  public static void main(String[] args) {
+	
+		    Scanner sc=new Scanner(System.in);
+		    System.out.print("Enter the binary:");
+	     	String binary=sc.nextLine();
+	    	int decimal=Integer.parseInt(binary,2);
+		    String octal=Integer.toOctalString(decimal);
+		    System.out.println("Octal Number is:"+octal);
+	  }
+}
+
+//output:-
+Enter the binary:010100101
+Octal Number is:245
+
+//program-4
+import java.util.Sacnner;
+class OctalToBinary {
+
+	 public static void main(String[] args) {
+		
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter the octal:");
+       String octal=sc.nextLine();
+       int decimal=Integer.parseInt(octal,8);
+       String binary=Integer.toBinaryString(decimal);
+       System.out.println("Binary number is:"+binary);
+	 }
+
+}
+//output:-
+Enter the octal:145
+Binary number is:1100101
+
+//program-5
+class ReverseNumber{
+    public static void main(String[] args){
+        int number=123;
+        int reversedNumber=0;
+        while(number>0){
+           int digit=number%10;//extract one digit from number
+           reversedNumber=reversedNumber*10+digit;
+           number=number/10;
+        }
+        System.out.println("Reversed number is:"+reversedNumber);
+    }
+}
+//output:-
+Reversed number is:321
+
+//program-6
+class SumOfDigits{
+    public static void main(String[] args){
+        int number=123;
+        int digitSum=0;
+        while(number>0){
+             int digit=number%10;
+             digitSum+=digit;
+             number=number/10;
+        }
+        System.out.println("Sum of digits:"+digitSum);
+    }
+}
+//output:-
+Sum of digits is:6
+
